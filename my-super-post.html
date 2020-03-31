@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <title>Powered By Data</title>
+    <meta charset="utf-8" />
+
+
+    <!-- mobile specific metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="/theme/css/default.css">
+    <link rel="stylesheet" href="/theme/css/layout.css">
+    <link rel="stylesheet" href="/theme/css/media-queries.css">
+
+    <link rel="stylesheet" href="/theme/css/pygments/native.css">
+
+
+    <!-- Script -->
+    <script src="/theme/js/modernizr.js"></script>
+    <script src="/theme/js/jquery-3.4.1.min.js"></script>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.png">
+
+  </head>
+
+  <body>
+    <header id="top">
+<!-- Header
+================================================== -->
+  <div class="row">
+    <div class="header-content twelve columns">
+      <h1 id="logo-text"><a href="" title="">Powered By Data</a></h1>
+      <p id="intro"></p>
+    </div>
+  </div>
+
+  <nav id="nav-wrap">
+    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show Menu</a>
+    <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>
+    <div class="row">
+      <ul id="nav" class="nav">
+
+      </ul> <!-- end #nav -->
+    </div>
+  </nav> <!-- end #nav-wrap -->    </header>
+
+    <div id="content-wrap">
+<!-- Content - Article -->
+  <div class="row">
+    <div id="main" class="eight columns">
+      <article class="entry">
+<header class="entry-header">
+
+  <h2 class="entry-title">
+    <a href="/my-super-post.html">My super title</a>
+  </h2>
+
+  <div class="entry-meta">
+    <ul>
+      <!-- date -->
+      <li>
+        <i class="fa fa-clock-o"></i>
+        二 17 3月 2020
+      </li>
+    </ul>
+  </div>
+</header>
+        <div class="entry-content-media">
+          <div class="post-thumb">
+          </div>
+        </div>
+
+        <div class="entry-content">
+          <h1><center>Statistics Answers</center></h1>
+<h2>1.</h2>
+<p>There are 5 situations when taking 4 balls from the box.</p>
+<p>① 4 red balls.
+$$
+P(4\ red) = \frac{5}{10} \times \frac{4}{9} \times \frac{3}{8} \times \frac{2}{7}
+$$
+② 1 white ball and 3 red balls.
+$$
+P(1\ white\ and\ 3\ red) = \frac{5}{10} \times \frac{5}{9} \times \frac{4}{8} \times \frac{3}{7}
+$$
+③ 2 white ball and 2 red balls.
+$$
+P(2\ white\ and\ 2\ red) = \frac{5}{10} \times \frac{4}{9} \times \frac{5}{8} \times \frac{4}{7}
+$$
+④ 3 white ball and 1 red balls.
+$$
+P(3\ white\ and\ 1\ red) = \frac{5}{10} \times \frac{4}{9} \times \frac{3}{8} \times \frac{5}{7}
+$$
+⑤ 4 white balls.
+$$
+P(4\ white) = \frac{5}{10} \times \frac{4}{9} \times \frac{3}{8} \times \frac{2}{7}
+$$</p>
+<p>Expected value:
+$$
+\begin{equation}
+\begin{aligned}</p>
+<p>E(\left|Number_{white} - Number_{red}  \right|) &amp;= 4 \times [P(4\ red) + P(4\ white)] \
+&amp;\ \ \ \ + 2 \times [P(1\ white\ and\ 3\ red) + P(3\ white\ and\ 1\ red)] \
+&amp;\ \ \ \ + 0 \times P(2\ white\ and\ 2\ red) \
+&amp;= 4 \times \frac{120 \times 2}{5040} + 2 \times \frac{300 \times 2}{5040} + 0 \
+&amp;= \frac{2160}{5040} \
+&amp;= \frac{3}{7}</p>
+<p>\end{aligned}
+\end{equation}
+$$</p>
+<h2>2.</h2>
+<p>The probability of the number of white and red balls in the box is a $Binomial\ Distribution$.</p>
+<p>There are 11 combinations in the box, below are their probabilities:
+$$
+\begin{equation}
+\begin{aligned}</p>
+<p>P(0\ white+10\ red) &amp;= \begin{pmatrix} 10\0 \end{pmatrix}\times (\frac{1}{2})^0\times (\frac{1}{2})^{10} = \frac{1}{1024},\ \ \ P(10\ white+0\ red) = \begin{pmatrix} 10\10 \end{pmatrix}\times (\frac{1}{2})^{10}\times (\frac{1}{2})^0 = \frac{1}{1024}\
+P(1\ white+9\ red) &amp;= \begin{pmatrix} 10\1 \end{pmatrix}\times (\frac{1}{2})^1\times (\frac{1}{2})^9 = \frac{10}{1024},\ \ \ \ P(9\ white+1\ red) = \begin{pmatrix} 10\9 \end{pmatrix}\times (\frac{1}{2})^9\times (\frac{1}{2})^1 = \frac{10}{1024}\
+P(2\ white+8\ red) &amp;= \begin{pmatrix} 10\2 \end{pmatrix}\times (\frac{1}{2})^2\times (\frac{1}{2})^8 = \frac{45}{1024},\ \ \ \ P(8\ white+2\ red) = \begin{pmatrix} 10\8 \end{pmatrix}\times (\frac{1}{2})^8\times (\frac{1}{2})^2 = \frac{45}{1024}\
+P(3\ white+7\ red) &amp;= \begin{pmatrix} 10\3 \end{pmatrix}\times (\frac{1}{2})^3\times (\frac{1}{2})^7 = \frac{120}{1024},\ \ \ \ P(7\ white+3\ red) = \begin{pmatrix} 10\7 \end{pmatrix}\times (\frac{1}{2})^7\times (\frac{1}{2})^3 = \frac{120}{1024}\
+P(4\ white+6\ red) &amp;= \begin{pmatrix} 10\4 \end{pmatrix}\times (\frac{1}{2})^4\times (\frac{1}{2})^6 = \frac{210}{1024},\ \ \ \ P(6\ white+4\ red) = \begin{pmatrix} 10\6 \end{pmatrix}\times (\frac{1}{2})^6\times (\frac{1}{2})^4 = \frac{210}{1024}\
+P(5\ white+5\ red) &amp;= \begin{pmatrix} 10\5 \end{pmatrix}\times (\frac{1}{2})^5\times (\frac{1}{2})^5 = \frac{252}{1024}\ </p>
+<p>\end{aligned}
+\end{equation}
+$$
+Set the result of the first 4 draws as event $A$, which is $(2\ white + 2\ red)$.</p>
+<p>The probability of $A$ is:
+$$
+\begin{equation}
+\begin{aligned}</p>
+<p>P(A) &amp;= \frac {P(2\ white+ 2\ red)}{P(4\ draws)} \
+     &amp;= \left (P(0\ white+10\ red) \times 0 
+     + P(1\ white+9\ red) \times 0 \
+     + P(2\ white+8\ red) \times \begin{pmatrix} 2\2 \end{pmatrix} \times \begin{pmatrix} 8\2 \end{pmatrix} 
+     + P(3\ white+7\ red) \times  \begin{pmatrix} 3\2 \end{pmatrix} \times \begin{pmatrix} 7\2 \end{pmatrix} \
+     + P(4\ white+6\ red) \times  \begin{pmatrix} 4\2 \end{pmatrix} \times \begin{pmatrix} 6\2 \end{pmatrix} 
+     + P(5\ white+5\ red) \times  \begin{pmatrix} 5\2 \end{pmatrix} \times \begin{pmatrix} 5\2 \end{pmatrix} \
+     + P(6\ white+4\ red) \times  \begin{pmatrix} 6\2 \end{pmatrix} \times \begin{pmatrix} 4\2 \end{pmatrix} 
+     + P(7\ white+3\ red) \times  \begin{pmatrix} 7\2 \end{pmatrix} \times \begin{pmatrix} 3\2 \end{pmatrix} \
+     + P(8\ white+2\ red) \times  \begin{pmatrix} 8\2 \end{pmatrix} \times \begin{pmatrix} 2\2 \end{pmatrix} 
+     + P(9\ white+1\ red) \times 0 
+     + P(10\ white+0\ red) \times 0 \right ) \times \frac{1}{\begin{pmatrix} 10\4 \end{pmatrix}} \
+     &amp;= \left ( \frac{45}{1024} \times 1 \times 28 + \frac{120}{1024} \times 3 \times 21 + \frac{210}{1024} \times 6 \times 15 + \frac{252}{1024} \times 10 \times 10 \
+     + \frac{210}{1024} \times 15 \times 6 + \frac{120}{1024} \times 21 \times 3 + \frac{45}{1024} \times 28 \times 1 \right ) \times \frac{1}{210} \
+     &amp;= \frac{1260+7560+18900+25200+18900+7560+1260}{1024 \times 210} \
+     &amp;= \frac{80640}{215040} \
+     &amp;= \frac{3}{8} </p>
+<p>\end{aligned}
+\end{equation}
+$$</p>
+<p>Event $A$ has already happened, so we should refresh the probabilities of the combinations in the box with conditional probability.
+$$
+\begin{equation}
+\begin{aligned}</p>
+<p>P(0\ white+10\ red \mid A) 
+    &amp;= \frac {P(0\ white+10\ red \cap A)}{P(A)}
+    = 0\
+P(1\ white+9\ red \mid A)<br>
+    &amp;= \frac {P(1\ white+9\ red \cap A)}{P(A)}\ \ 
+    = 0\
+P(2\ white+8\ red \mid A)<br>
+    &amp;= \frac {P(2\ white+8\ red \cap A)}{P(A)}\ \ 
+    = \frac{P(2\ white+8\ red) \times \begin{pmatrix} 2\2 \end{pmatrix} \times \begin{pmatrix} 8\2 \end{pmatrix} \times \frac{1}{\begin{pmatrix} 10\4 \end{pmatrix}}}{\frac{3}{8} }
+    = \ \  \frac{\frac{45}{1024} \times 1 \times 28 \times \frac{1}{210}}{\frac{3}{8} }
+    = \ \ \ \ \frac{45 \times 1 \times 28 \times 1 \times 8}{1024 \times 210 \times 3} 
+    = \frac{1}{64} \
+P(3\ white+7\ red \mid A)<br>
+    &amp;= \frac {P(3\ white+7\ red \cap A)}{P(A)}\ \ 
+    = \frac{P(3\ white+7\ red) \times  \begin{pmatrix} 3\2 \end{pmatrix} \times \begin{pmatrix} 7\2 \end{pmatrix}\times \frac{1}{\begin{pmatrix} 10\4 \end{pmatrix}}}{\frac{3}{8} }
+    = \ \  \frac{\frac{120}{1024} \times 3 \times 21\times \frac{1}{210}}{\frac{3}{8} }
+    = \ \ \frac{120 \times 3 \times 21 \times 1 \times 8}{1024 \times 210 \times 3} 
+    = \frac{6}{64} \
+P(4\ white+6\ red \mid A)<br>
+    &amp;= \frac {P(4\ white+6\ red \cap A)}{P(A)}\ \ 
+    = \frac{P(4\ white+6\ red) \times  \begin{pmatrix} 4\2 \end{pmatrix} \times \begin{pmatrix} 6\2 \end{pmatrix}\times \frac{1}{\begin{pmatrix} 10\4 \end{pmatrix}}}{\frac{3}{8} }
+    = \ \ \frac{\frac{210}{1024} \times 6 \times 15\times \frac{1}{210}}{\frac{3}{8} }
+    = \ \ \frac{210 \times 6 \times 15 \times 1 \times 8}{1024 \times 210 \times 3} 
+    = \frac{15}{64} \
+P(5\ white+5\ red \mid A)<br>
+    &amp;= \frac {P(5\ white+5\ red \cap A)}{P(A)}\ \ 
+    = \frac{P(5\ white+5\ red) \times  \begin{pmatrix} 5\2 \end{pmatrix} \times \begin{pmatrix} 5\2 \end{pmatrix}\times \frac{1}{\begin{pmatrix} 10\4 \end{pmatrix}}}{\frac{3}{8} }
+    = \frac{\frac{252}{1024} \times 10 \times 10\times \frac{1}{210}}{\frac{3}{8} }
+    = \frac{252 \times 10 \times 10 \times 1 \times 8}{1024 \times 210 \times 3} 
+    = \frac{20}{64} \
+P(6\ white+4\ red \mid A)<br>
+    &amp;= \frac {P(6\ white+4\ red \cap A)}{P(A)}\ \ 
+    = \frac{P(6\ white+4\ red) \times  \begin{pmatrix} 6\2 \end{pmatrix} \times \begin{pmatrix} 4\2 \end{pmatrix}\times \frac{1}{\begin{pmatrix} 10\4 \end{pmatrix}}}{\frac{3}{8} }
+    = \ \ \frac{\frac{210}{1024} \times 15 \times 6\times \frac{1}{210}}{\frac{3}{8} }
+    = \ \ \frac{210 \times 15 \times 6 \times 1 \times 8}{1024 \times 210 \times 3} 
+    = \frac{15}{64} \
+P(7\ white+3\ red \mid A)<br>
+    &amp;= \frac {P(7\ white+3\ red \cap A)}{P(A)}\ \ 
+    = \frac{P(7\ white+3\ red) \times  \begin{pmatrix} 7\2 \end{pmatrix} \times \begin{pmatrix} 3\2 \end{pmatrix}\times \frac{1}{\begin{pmatrix} 10\4 \end{pmatrix}}}{\frac{3}{8} }
+    = \ \ \frac{\frac{120}{1024} \times 21 \times 3\times \frac{1}{210}}{\frac{3}{8} }
+    = \ \ \frac{120 \times 21 \times 3 \times 1 \times 8}{1024 \times 210 \times 3} 
+    = \frac{6}{64} \
+P(8\ white+2\ red \mid A)<br>
+    &amp;= \frac {P(8\ white+2\ red \cap A)}{P(A)}\ \ 
+    = \frac{P(8\ white+2\ red) \times  \begin{pmatrix} 8\2 \end{pmatrix} \times \begin{pmatrix} 2\2 \end{pmatrix}\times \frac{1}{\begin{pmatrix} 10\4 \end{pmatrix}}}{\frac{3}{8} }
+    = \ \ \frac{\frac{45}{1024} \times 28 \times 1\times \frac{1}{210}}{\frac{3}{8} }
+    = \ \ \ \ \frac{45 \times 28 \times 1 \times 1 \times 8}{1024 \times 210 \times 3} 
+    = \frac{1}{64} \
+P(9\ white+1\ red \mid A)<br>
+    &amp;= \frac {P(9\ white+1\ red \cap A)}{P(A)}\ \ 
+    = 0\
+P(10\ white+0\ red \mid A)<br>
+    &amp;= \frac {P(10\ white+0\ red \cap A)}{P(A)}
+    = 0\</p>
+<p>\end{aligned}
+\end{equation}
+$$</p>
+<p>Set the difference between white balls and red balls in the result of the next 4 draws as $B$.</p>
+<p>Because of putting 4 balls back after the first round, event $A$ and event $B$ are $Statistical\ Independent$.</p>
+<p>Below is the conditional probability of the difference between the number of red and white balls drawn in the second round given event $A$：
+$$
+\begin{equation}
+\begin{aligned}</p>
+<p>P(\left|B\right|=10 \mid A) 
+    &amp;= \frac {P(B=10 \cap A)}{P(A)} 
+    = P(\left|B\right|=10) 
+    = P(0\ white+10\ red \mid A) 
+    = 0 \
+P(\left|B\right|=8  \mid A) \ \ 
+    &amp;= \frac {P(B=8  \cap A)}{P(A)}\ \ 
+    = P(\left|B\right|=8) \ \ 
+    = P(1\ white+9\ red \mid A) + P(9\ white+1\ red \mid A) 
+    = 0 \
+P(\left|B\right|=6  \mid A) \ \ 
+    &amp;= \frac {P(B=6  \cap A)}{P(A)} \ \ 
+    = P(\left|B\right|=6) \ \ 
+    = P(2\ white+8\ red \mid A) + P(8\ white+2\ red \mid A) 
+    = \frac{1}{64} + \frac{1}{64} 
+    = \frac{1}{32} \
+P(\left|B\right|=4  \mid A) \ \ 
+    &amp;= \frac {P(B=4  \cap A)}{P(A)} \ \ 
+    = P(\left|B\right|=4) \ \ 
+    = P(3\ white+7\ red \mid A) + P(7\ white+3\ red \mid A) 
+    = \frac{6}{64} + \frac{6}{64} 
+    = \frac{6}{32}\
+P(\left|B\right|=2  \mid A) \ \ 
+    &amp;= \frac {P(B=2  \cap A)}{P(A)} \ \ 
+    = P(\left|B\right|=2) \ \ 
+    = P(4\ white+6\ red \mid A) + P(6\ white+4\ red \mid A) 
+    = \frac{15}{64} + \frac{15}{64} 
+    = \frac{15}{32}\
+P(\left|B\right|=0  \mid A) \ \ 
+    &amp;= \frac {P(B=0  \cap A)}{P(A)} \ \ 
+    = P(\left|B\right|=0) \ \ 
+    = P(6\ white+6\ red \mid A)
+    = \frac{10}{32}</p>
+<p>\end{aligned}
+\end{equation}
+$$</p>
+<p>Expected value:
+$$
+\begin{equation}
+\begin{aligned}</p>
+<p>E(\left|Number_{white} - Number_{red}  \right|) 
+    &amp;= E(\left| B \right|) \ 
+    &amp;= 
+    10 \times P(\left|B\right|=10 \mid A) \
+    &amp;\ \ \ \ + 8 \times P(\left|B\right|=8 \mid A) \
+    &amp;\ \ \ \ + 6 \times P(\left|B\right|=6 \mid A) \
+    &amp;\ \ \ \ + 4 \times P(\left|B\right|=4 \mid A) \
+    &amp;\ \ \ \ + 2 \times P(\left|B\right|=2 \mid A) \
+    &amp;\ \ \ \ + 0 \times P(\left|B\right|=0 \mid A) </p>
+<div class="highlight"><pre><span></span><span class="err">\\</span>
+<span class="o">&amp;=</span>  <span class="mi">10</span> <span class="err">\</span><span class="n">times</span> <span class="mi">0</span>
+   <span class="o">+</span>  <span class="mi">8</span> <span class="err">\</span><span class="n">times</span> <span class="mi">0</span>
+   <span class="o">+</span>  <span class="mi">6</span> <span class="err">\</span><span class="n">times</span> <span class="err">\</span><span class="n">frac</span><span class="err">{</span><span class="mi">1</span><span class="err">}{</span><span class="mi">32</span><span class="err">}</span>
+   <span class="o">+</span>  <span class="mi">4</span> <span class="err">\</span><span class="n">times</span> <span class="err">\</span><span class="n">frac</span><span class="err">{</span><span class="mi">6</span><span class="err">}{</span><span class="mi">32</span><span class="err">}</span>
+   <span class="o">+</span>  <span class="mi">2</span> <span class="err">\</span><span class="n">times</span> <span class="err">\</span><span class="n">frac</span><span class="err">{</span><span class="mi">15</span><span class="err">}{</span><span class="mi">32</span><span class="err">}</span>
+   <span class="o">+</span>  <span class="mi">0</span> <span class="err">\</span><span class="n">times</span> <span class="err">\</span><span class="n">frac</span><span class="err">{</span><span class="mi">10</span><span class="err">}{</span><span class="mi">32</span><span class="err">}</span> <span class="err">\\</span>
+<span class="o">&amp;=</span> <span class="err">\</span><span class="n">frac</span><span class="err">{</span><span class="mi">6</span> <span class="o">+</span> <span class="mi">24</span> <span class="o">+</span> <span class="mi">30</span><span class="err">}{</span><span class="mi">32</span><span class="err">}</span> <span class="err">\\</span>
+<span class="o">&amp;=</span> <span class="mi">2</span>
+</pre></div>
+
+
+<p>\end{aligned}
+\end{equation}
+$$</p>
+        </div>
+      </article>
+
+<!-- Comments -->
+    </div> <!-- main End -->
+<!-- Sidebar -->
+<div id="sidebar" class="four columns">
+
+
+
+
+
+
+
+
+
+</div> <!-- end sidebar -->  </div> <!-- end row -->
+    </div>
+
+    <footer>
+<!-- Footer
+================================================== -->
+  <div class="row">
+    <div class="twelve columns">
+      <ul class="social-links">
+        <li><a href="#"><i class="fas fa-you-can-add-links-in-your-config-file fa-lg"></i></a></li>
+        <li><a href="#"><i class="fas fa-another-social-link fa-lg"></i></a></li>
+    </ul>
+  </div>
+
+
+  <div class="twelve columns">&copy; 2020 Jordan Chen
+    &middot; Powered by <a href="https://github.com/rcassani/pelican-kis" target="_blank">pelican-kis</a> and <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+
+           </div>
+
+
+  </div> <!-- End row -->
+  <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-chevron-up"></i></a></div>    </footer>
+
+    <!-- Java Script -->
+    <script src="/theme/js/jquery-3.4.1.min.js"></script>
+    <script src="/theme/js/main.js"></script>
+
+  </body>
+</html>
